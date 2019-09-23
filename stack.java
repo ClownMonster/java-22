@@ -1,0 +1,96 @@
+import java.util.*;
+
+public class stack{
+
+    int Stack[];
+    static int enter = 0, del =- 1, top = -1;
+    static Scanner sc = new Scanner(System.in);
+
+    stack(int size)
+    {
+      Stack =  new int[size];
+    }
+
+
+  void push(int size)
+  {
+    if(top == size -1)
+    {
+      System.out.println("Stack Overflow");
+      return;
+
+    }
+    else{
+      System.out.println("Enter the Element to push into the stack");
+
+      enter = sc.nextInt();
+      Stack[++top] = enter;
+      return;
+    }
+  }
+
+  int pop()
+  {
+    if(top == -1)
+    {
+      System.out.println("Stack Underflow");
+      return -1;
+
+    }
+
+    else{
+      return  Stack[top--];
+      
+    }
+  }
+
+  void display()
+  { 
+    if(top == -1)
+    {
+      System.out.println("Stack is Empty");
+      return;
+    }
+    else{
+      for(int i=0;i<=top;i++)
+      {
+        System.out.println(" " +Stack[i]);
+
+      }
+    }
+  }
+
+public static void main(String argss[])
+{
+  System.out.println("Enter the Size of the stack");
+  int size = sc.nextInt();
+  stack o = new stack(size);
+  while(true)
+  {
+    System.out.println("*******Stack Menu********");
+    System.out.println("1.Push\n2.Pop\n3.Display\n4.exit");
+    System.out.println("Enter your choice");
+    int a = sc.nextInt();
+    switch (a) {
+      case 1: o.push(size);
+              break;
+      case 2 : del = o.pop();
+               if(del>=0)
+               {
+                  System.out.println(del+" is the poped Element from the stack");
+
+               }        
+               break;
+      case 3:o.display();
+             break;
+      case 4:System.exit(0);
+      default:System.out.println("Invalid choice");
+              break;
+    }
+
+  }
+
+}
+
+
+}

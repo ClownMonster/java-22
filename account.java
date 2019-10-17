@@ -11,7 +11,7 @@ public class account {
     System.out.println("Enter the Account Number :");
     Account_no = sc.nextInt();
     System.out.println("Enter the Name :");
-    Name = sc.nextLine();
+    Name = sc.nextLine(); /* change this to -> Name = sc.Line();  if any run time errors */
     System.out.println("Enter Phone Number :");
     Phone_no = sc.nextInt();
     
@@ -51,7 +51,7 @@ public class account {
   }
 
   public static void main(String args[]) { 
-    account o = new account();
+    account o = new account();   /* object reference */
     o.getinput();
     while(true){
     System.out.println("******Menu********");
@@ -68,9 +68,9 @@ public class account {
       case 4: System.exit(0);
       default:System.out.println("Invalid choice");
               break;
-                }
-              }
+                } /* end of switch case */
+              }   /* end of while */
     
-    }
+    }/*end of public static void main */
 
-}
+} /* end of class */

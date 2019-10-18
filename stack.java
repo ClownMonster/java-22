@@ -2,11 +2,11 @@ import java.util.*;
 
 public class stack{
 
-    int Stack[];
-    static int enter = 0, del =- 1, top = -1;
+    int Stack[]; /*global stack */
+    static int enter = 0, del =- 1, top = -1; /* static variables so as to access easily in the class */
     static Scanner sc = new Scanner(System.in);
 
-    stack(int size)
+    stack(int size) /*constructor to initialize the stack of required size */
     {
       Stack =  new int[size];
     }
@@ -24,7 +24,7 @@ public class stack{
       System.out.println("Enter the Element to push into the stack");
 
       enter = sc.nextInt();
-      Stack[++top] = enter;
+      Stack[++top] = enter; /* pre-increement of the top and pushing the data element into the stack */
       return;
     }
   }
@@ -39,7 +39,7 @@ public class stack{
     }
 
     else{
-      return  Stack[top--];
+      return  Stack[top--]; /* deleting the top element and post decreement of top valu */
       
     }
   }
@@ -64,7 +64,7 @@ public static void main(String argss[])
 {
   System.out.println("Enter the Size of the stack");
   int size = sc.nextInt();
-  stack o = new stack(size);
+  stack o = new stack(size); /* creating the object refernce to the class and calling the constructor for the initialization */
   while(true)
   {
     System.out.println("*******Stack Menu********");

@@ -61,7 +61,7 @@ class fibonacci{
       System.out.println("Enter the number to which fibonacci series is to be found");
       int number = sc.nextInt();
       System.out.println("Start of series");
-      for (int i=0;i<number;i++) {
+      for (int i=0;i<number;i++) { /* loop for n numbers */
         System.out.print(with_recursion(i)+ " ");
       }
       System.out.println(" ");

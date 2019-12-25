@@ -4,7 +4,7 @@ class sort{
 
   sort(int A[])   /*constructor */
   {
-    int n = A.length;   /*sorting algorithm for asscending order*/
+    int n = A.length;   /*bubble sorting algorithm for asscending order*/
     for(int i=0;i<n-1;i++)
       for(int j=0;j<n-i-1;j++)
        if(A[j] > A[j+1])    

@@ -3,8 +3,8 @@ import java.util.*;
 public class stack{
 
     int Stack[]; /*global stack */
-    static int enter = 0, del =- 1, top = -1; /* static variables so as to access easily in the class */
-    static Scanner sc = new Scanner(System.in);
+    static int  top = -1; /* static variables so as to access easily in the static methods */
+    static Scanner sc = new Scanner(System.in); /* static so as to access easily in the static methods */
 
     stack(int size) /*constructor to initialize the stack of required size */
     {
@@ -23,8 +23,7 @@ public class stack{
     else{
       System.out.println("Enter the Element to push into the stack");
 
-      enter = sc.nextInt();
-      Stack[++top] = enter; /* pre-increement of the top and pushing the data element into the stack */
+      Stack[++top] = sc.nextInt();/* pre-increement of the top and pushing the data element into the stack */
       return;
     }
   }
@@ -54,7 +53,7 @@ public class stack{
     else{
       for(int i=0;i<=top;i++)
       {
-        System.out.println(" " +Stack[i]);
+        System.out.print(" " +Stack[i]+ " ");
 
       }
     }

@@ -9,7 +9,7 @@ class sort{
       for(int j=0;j<n-i-1;j++)
        if(A[j] > A[j+1])    
         {
-          int temp = A[j];
+          int temp = A[j]/* interchange of elements */;
           A[j] = A[j+1];
           A[j+1] = temp;    /* interchange of elements */
         }        

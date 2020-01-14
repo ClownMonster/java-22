@@ -8,7 +8,7 @@ public class stack{
 
     stack(int size) /*constructor to initialize the stack of required size */
     {
-      Stack =  new int[size];
+      Stack =  new int[size];/* initializing the stack with the users input size */
     }
 
 

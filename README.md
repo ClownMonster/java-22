@@ -1,1 +1,1 @@
-Lab Programs for java 3sem
+java Lab Programs for  3rd sem

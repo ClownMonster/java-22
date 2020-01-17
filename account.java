@@ -4,8 +4,8 @@ import java.util.*;
 public class account {
    static Scanner sc = new Scanner(System.in);/* static because it can be accessed from static main method*/
    int Account_no, Phone_no; /* global variables*/
-   float balance_amt = 4000, depoition_amt, withdrawn_amt;
-   String Name;
+   float balance_amt = 4000, depoition_amt, withdrawn_amt; /* global variables*/
+   String Name; /* global variable*/
 
   void getinput() {
     System.out.println("Enter the Account Number :");

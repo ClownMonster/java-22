@@ -16,8 +16,8 @@ class sort{
   }
 
   void print(int A[])
-  { int n = A.length;
-    for(int i=0;i<n;i++)
+  { 
+    for(int i=0;i<A.length;i++)
     System.out.print(A[i] +" ");
 
   }

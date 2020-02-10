@@ -24,8 +24,7 @@ class sort{
 
   public static void main(String args[])
   { 
-    Scanner sc = new Scanner(System.in);
-    
+    Scanner sc = new Scanner(System.in); /* scanner object to take the input from console */
     System.out.println("Enter the size of the array");
     int size = sc.nextInt();
     

@@ -1,6 +1,4 @@
 import java.util.*;
-
-
 public class account {
    static Scanner sc = new Scanner(System.in);/* static because it can be accessed from static main method*/
    int Account_no, Phone_no; /* global variables*/
@@ -17,7 +15,8 @@ public class account {
     
   }
 
-  void Deposit() {
+  void Deposit() 
+  {
     System.out.println("*****Deposition counter********");
     System.out.println("Enter the amount to be deposited");
     depoition_amt = sc.nextFloat();

@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class stack{
 
     int Stack[]; /*global stack */
@@ -20,7 +19,8 @@ public class stack{
       return;
 
     }
-    else{
+    else
+    {
       System.out.println("Enter the Element to push into the stack");
 
       Stack[++top] = sc.nextInt();/* pre-increement of the top and pushing the data element into the stack */
